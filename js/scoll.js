@@ -1,6 +1,10 @@
 $(document).ready(function() {
-    
+
     $("html,body").stop();
+
+    $("#home").click(function(){
+        $("html,body").animate({"scrollTop":$("#main").offset().top});
+    })
 
     $("#icon-torikomu").click(function(){
         $("html,body").animate({"scrollTop":$("#card-torikomu").offset().top});
